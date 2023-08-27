@@ -1,0 +1,3 @@
+[submodule "/Personal-Website"] 
+  path = /Personal-Website
+  url = git:https://github.com/RJaryal30/Personal-Website.git
