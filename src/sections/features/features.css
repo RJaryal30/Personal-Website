@@ -1,0 +1,33 @@
+.car__features {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.car__features-heading {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.car__features-heading h1 {
+    font-family: var(--font-family2);
+    font-size: 30 px;
+    line-height: 40 px;
+    text-align: center;
+}   
+
+.car__features-heading p {
+    font-family: var(--font-family2);
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}

@@ -1,0 +1,81 @@
+.car__info {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    background: var(--color-footer);
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(circle at 6% 28%, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(circle at 6% 28%, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(circle at 6% 28%, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(circle at 6% 28%, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(circle at 6% 28%, rgba(174, 103, 250, 1) 0%, rgba(244, 152, 103, 1) 100%);
+}
+
+.car__info-feature {
+    display: flex;
+} 
+
+.car__info-feature h1{
+    font-family: var(--font-family2);
+    font-size: 30px;
+    letter-spacing: -0.04em;
+    color:#fff;
+    margin-bottom: -0.5em;
+} 
+
+.car__info-feature .car__features-container__feature {
+    margin: 0;
+}
+
+.car__info-feature .car__features-container__feature-text {
+    max-width: 700px;
+}
+
+.car__info-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+.car__info-container .car__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.car__info-container .car__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .car__info-feature .car__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .car__info-feature .car__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .car__info-container .car__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

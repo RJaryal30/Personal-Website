@@ -1,0 +1,173 @@
+.car__resume {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.car__resume-heading {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    text-align: center;
+    margin-right: 5rem;
+}
+
+.car__resume-heading h1 {
+    font-family: var(--font-family2);
+    font-size: 30 px;
+    line-height: 40 px;
+    text-align: center;
+}   
+
+.car__resume-heading p {
+    font-family: var(--font-family2);
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.car__resume-container {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; 
+    padding: 5%;
+}
+.car__resume-container h1 {
+    font-family: var(--font-family2);
+    font-size: 24px;
+    color: #fff;
+    line-height: 34px;
+    cursor: pointer;
+}
+.car__resume-container div {
+    width:68px;
+    height: 3px;
+    background: var(--gradient-bar);
+    margin-top: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.car__resume-pdf-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-left: 20%;
+    margin-right: 60%;
+}
+
+.car__resume-pdf-container embed{
+    width:700px; 
+    height:900px;
+}
+
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .car__resume-heading {
+        text-align: left;
+    }
+    .car__resume-heading p {
+        font-size: 14px;
+    }
+    .car__resume-pdf-container {
+        display:none;
+    }
+    .car__resume-pdf-container embed{
+        display: none;
+    }
+    .car__resume-container h1 {
+        margin-top: 2rem;
+        font-size: 18px;
+        line-height: 20px;
+        flex-direction: row;
+    }
+    .car__resume-container {
+        flex-direction: row;
+        display:flex-end;
+    }
+
+    .car__resume-heading p {
+        display: none;
+    }
+    .car__resume {
+        flex-direction: column;
+    }
+    .car__resume-container div {
+        display: none;
+    }
+    .color-change-3x {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    /* Customizing feature component as per needs */
+    .car__resume-pdf-container embed{
+        display: none;
+    }
+    .car__resume-pdf-container {
+        display:none;
+    }
+    .car__resume-heading p {
+        display: none;
+    }
+    .car__resume-container div {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    /* Customizing feature component as per needs */
+    .car__resume {
+        flex-direction: column;
+    }
+    .car__resume-container h1 {
+        margin-top: 2rem;
+        font-size: 18px;
+        line-height: 20px;
+        flex-direction: row;
+        margin-right:3rem;
+
+    }
+    .car__resume-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .car__resume-container {
+        flex-direction: row;
+        display:flex-end;
+    }
+    .car__resume-container div {
+        display: none;
+    }
+    .car__resume-pdf-container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+
+
